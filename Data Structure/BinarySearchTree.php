@@ -22,7 +22,6 @@ class BinarySearchTree
         $this->root = null;
     }
 
-
     function insert($value)
     {
         if(is_null($this->root))
@@ -53,7 +52,6 @@ class BinarySearchTree
         }
 
         return $this;
-
     }
 
     function lookup($value)
@@ -99,5 +97,7 @@ $bts->insert(20);
 $bts->insert(170);
 $bts->insert(15);
 $bts->insert(1);
-var_dump($bts);
 var_dump($bts->lookup(4));
+echo "\n------------------------\n"
+var_dump($bts);
+
