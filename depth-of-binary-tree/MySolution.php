@@ -36,16 +36,16 @@ class Solution {
             $current = array_pop($this->stack);
 
             if($current->left) {
-                array_push($this->stack,$current->left );
+                array_push($this->stack,$current->left);
                 $depthLeft ++;
             }
             if($current->right) {
-                array_push($this->stack,$current->right );
+                array_push($this->stack,$current->right);
                 $depthRight++;
             }
               
         }
-        return $depthRight>$depthLeft ? $depthRight : $depthLeft;
+        return $depthRight > $depthLeft ? $depthRight : $depthLeft;
     }
 }
 
